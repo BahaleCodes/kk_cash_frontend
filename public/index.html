@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Are you in need of a quick cash loan? With all our proceedures handled online, fast applications at an affordable interest rate, look no where other than KK Cash Loans." />
+	<meta name="description" content="Web site developed by Thabo Mponya" />
+
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css" />
+
+	<link rel="apple-touch-icon" href="./img/icon.jpg" />
+
+
+	<title>KK Cash Loans</title>
+	<meta name="description"
+		content="Are you in need of a quick cash loan? With all our proceedures handled online, fast applications at an affordable interest rate, look no where other than KK Cash Loans." />
+</head>
+
+<body>
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="backdrop-hook"></div>
+	<div id="modal-hook"></div>
+	<div id="drawer-hook"></div>
+	<div id="root"></div>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function () {
+				navigator.serviceWorker.register('worker.js').then(function (registration) {
+					console.log('Worker registration successful', registration.scope);
+				}, function (err) {
+					console.log('Worker registration failed', err);
+				}).catch(function (err) {
+					console.log(err);
+				});
+			});
+		} else {
+			console.log('Service Worker is not supported by browser.');
+		}
+	</script>
+	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

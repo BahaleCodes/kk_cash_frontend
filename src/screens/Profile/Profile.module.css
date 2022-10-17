@@ -1,0 +1,36 @@
+.Profile {
+    margin-top: 10rem;
+}
+
+/* User container */
+/* .User{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+} */
+.row{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-self: center;
+}
+.toggleBtns{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    border: 0.2rem solid black;
+    border-radius: 20rem;
+}
+.btn{
+    margin: 0.2rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.toggleBtns{
+        flex-flow: column;
+        border: none;
+    }
+}

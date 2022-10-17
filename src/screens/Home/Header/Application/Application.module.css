@@ -1,0 +1,33 @@
+    .cnt_body{
+    display: table-row;
+    font-size: 0.8em;
+    /* padding: 0.3em 1.5em; */
+    padding: 1rem;
+    text-align: center;
+    height: 100%;
+}
+.row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.numbers {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    margin-top: 1.6rem;
+    border-top: 0.4rem solid #0071c5;
+    border-radius: 0 0 5rem 5rem;
+}
+.done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    width: 15rem;
+    height: 10rem;
+}
